@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> 줌 수업 </title>
+</head>
+
+<body>
+  <h1>줌 수업.</h1>
+  <input 
+  id='go_home'    
+  type='button'
+  onclick='newPage()'
+  value='줌수업으로 이동하기'
+  />
+  <script>
+    var 수학 = "https://zoom.us/j/8916614576#success"
+    var 국어 = "https://zoom.us/j/8184678206#success"
+    var 체육 = "https://zoom.us/j/9514124295#success"
+    var 과학2 = "https://zoom.us/j/7469507269#success"
+    var 역사 = "https://zoom.us/j/9940661889#success"
+    var 기술 = "https://zoom.us/j/9792438392#success"
+    var 가정 = "https://zoom.us/j/6737408491#success"
+    var 한문 = "https://zoom.us/j/7899127692#success"
+    var 과학1 = "https://zoom.us/j/7383042668#success"
+    var 영어 = "https://zoom.us/j/8279116541#success"
+    var 음악 = "https://zoom.us/j/7345864613#success"
+    var 도덕 = "https://zoom.us/j/6085926761#success"
+    var 스포츠 = "https://zoom.us/j/5655434214#success"
+    let today = new Date();   
+    let year = today.getFullYear(); // 년도
+    let month = today.getMonth() + 1;  // 월
+    let date = today.getDate();  // 날짜
+    let day = today.getDay();  // 요일
+    let minutes = today.getMinutes();  // 분
+    let hours = today.getHours(); // 시
+    if (day == 1) { //월
+        if (hours == 8 && minutes <= 40) {
+            function neWPage() {
+                window.location.href = 국어
+            }
+        }else if (hours == 8 && minutes >= 50) { //1교시
+            function newPage() {
+                window.location.href = 수학
+            }
+        } else if (hours == 9) { //2교시
+            function newPage() {
+                window.location.href = 국어
+            }
+        } else if (hours == 10) { //3교시
+            function newPage() {
+                window.location.href = 체육
+            }
+        } else if (hours == 11) { //4교시 
+            function newPage() {
+                window.location.href = 과학2
+            }
+        } else if (hours == 13) { //5교시
+            function newPage() {
+                window.location.href = 역사
+            }
+        } else if (hours == 14) { //6교시
+            function newPage() {
+                window.location.href = 기술
+            }
+        }else if (hours == 14 && minutes >= 21) {
+            function newPage() {
+                window.location.href = 국어
+            }
+        }
+    }else if (day == 2) { //화
+        if (hours == 8 && minutes <= 40) {
+            function neWPage() {
+                window.location.href = 국어
+            }
+        }
+        if (hours == 8 && minutes >= 50) { //1교시
+            function newPage() {
+                window.location.href = 가정
+            }
+        } else if (hours == 9) { //2교시
+            function newPage() {
+                window.location.href = 한문
+            }
+        } else if (hours == 10) { //3교시
+            function newPage() {
+                window.location.href = 과학1
+            }
+        } else if (hours == 11) { //4교시 
+            function newPage() {
+                window.location.href = 도덕
+            }
+        } else if (hours == 13) { //5교시
+            function newPage() {
+                window.location.href = 영어
+            }
+        } else if (hours == 14) { //6교시
+            function newPage() {
+                window.location.href = 체육
+            }
+        }else if (hours == 14 && minutes >= 21) {
+            function newPage() {
+                window.location.href = 국어
+            }
+        }   
+    }else if (day == 3) { //수
+        if (hours == 8 && minutes <= 40) {
+            function neWPage() {
+                window.location.href = 국어
+            }
+        }
+        if (hours == 8 && minutes >= 50) { //1교시
+            function newPage() {
+                window.location.href = 음악
+            }
+        } else if (hours == 9) { //2교시
+            function newPage() {
+                window.location.href = 국어
+            }
+        } else if (hours == 10) { //3교시
+            function newPage() {
+                window.location.href = 체육
+            }
+        } else if (hours == 11) { //4교시 
+            function newPage() {
+                window.location.href = 역사
+            }
+        } else if (hours == 13) { //5교시
+            function newPage() {
+                window.location.href = 영어
+            }
+        } else if (hours == 14) { //6교시
+            function newPage() {
+                window.location.href = 수학
+            }
+        } else if (hours == 14 && minutes >= 21) {
+            function newPage() {
+                window.location.href = 국어
+            }
+        }
+    }else if (day == 4) { //목
+        if (hours == 8 && minutes <= 40) {
+            function neWPage() {
+                window.location.href = 국어
+            }
+        }
+        if (hours == 8 && minutes >= 50) { //1교시
+            function newPage() {
+                window.location.href = 영어
+            }
+        } else if (hours == 9) { //2교시
+            function newPage() {
+                window.location.href = 과학1
+            }
+        } else if (hours == 10) { //3교시
+            function newPage() {
+                window.location.href = 도덕
+            }
+        } else if (hours == 11) { //4교시 
+            function newPage() {
+                window.location.href = 가정
+            }
+        } else if (hours == 13) { //5교시
+            function newPage() {
+                window.location.href = 수학
+            }
+        } else if (hours == 14) { //6교시
+            function newPage() {
+                window.location.href = 스포츠
+            }
+        } else if (hours == 15) { //7교시
+            function newPage() {
+                window.location.href = 국어
+            }
+        }
+    }else if (day == 5) { //금
+        if (hours == 8 && minutes <= 40) {
+            function neWPage() {
+                window.location.href = 국어
+            }
+        }
+        if (hours == 8 && minutes >= 50) { //1교시
+            function newPage() {
+                window.location.href = 국어
+            }
+        } else if (hours == 9) { //2교시
+            function newPage() {
+                window.location.href = 역사
+            }
+        } else if (hours == 10) { //3교시
+            function newPage() {
+                window.location.href = 한문
+            }
+        } else if (hours == 11) { //4교시 
+            function newPage() {
+                window.location.href = 과학2
+            }
+        } else if (hours == 13) { //5교시
+            function newPage() {
+                window.location.href = 영어
+            }
+        } else if (hours == 14) { //6교시
+            function newPage() {
+                window.location.href = 수학
+            }
+        }else if (hours == 14 && minutes >= 21) {
+            function newPage() {
+                window.location.href = 국어
+            }
+        }
+    }
+  </script>
+</body>
+</html>
